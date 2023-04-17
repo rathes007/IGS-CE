@@ -1,13 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  ResponsiveAppBar  from "./components/Utils/HeaderBar";
+import { Admin } from "./components/Utils/Admin/Admin";
 
 function App() {
   return (
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ResponsiveAppBar />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <ResponsiveAppBar />
+      <Routes>
+        <Route path="/" element={<Admin />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
