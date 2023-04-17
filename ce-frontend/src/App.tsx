@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import  ResponsiveAppBar  from "./components/Utils/HeaderBar";
-import { Admin } from "./components/Utils/Admin/Admin";
+import ResponsiveAppBar from "./components/Utils/HeaderBar";
+import { Admin } from "./components/Admin/Admin";
 
 function App() {
   return (

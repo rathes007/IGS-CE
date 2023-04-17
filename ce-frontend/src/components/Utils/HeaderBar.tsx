@@ -13,19 +13,20 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useTheme } from "@material-ui/core/styles";
-import { Badge } from "@mui/material";
+import { Badge, Grid } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const pages = ["Owners", "Buy/Sell", "Contact Us"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-function ResponsiveAppBar(props) {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);
   };
 
@@ -154,17 +155,20 @@ function ResponsiveAppBar(props) {
                 <Badge badgeContent={4} color="error">
                   <Button
                     key="requests"
+                    LinkComponent={Link}
+                    href="/requests"
                     onClick={handleCloseNavMenu}
                     sx={{
                       "&:hover": {
-                        backgroundColor: theme.palette.white.main,
+                        backgroundColor: theme.palette.info.main,
                       },
                       fontFamily: "Poppins",
                       borderRadius: "12px",
                       display: "block",
                       textTransform: "none",
+                      boxShadow: `0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)`,
                       color: theme.palette.primary.main,
-                      backgroundColor: theme.palette.white.main,
+                      backgroundColor: theme.palette.info.main,
                     }}
                   >
                     Requests
@@ -205,7 +209,6 @@ function ResponsiveAppBar(props) {
           </Toolbar>
         </Container>
       </AppBar>
-      <Box>{props.children}</Box>
     </div>
   );
 }
