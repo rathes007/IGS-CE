@@ -54,7 +54,7 @@ const PropertyFormCom = () => {
     >
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -75,7 +75,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -96,7 +96,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -111,7 +111,7 @@ const PropertyFormCom = () => {
           id="demo-multiple-name"
           multiple
           value={personName}
-          onChange={handleChange}
+        //   onChange={handleChange}
           input={<OutlinedInput label="Name" />}
           MenuProps={MenuProps}
         >
@@ -128,7 +128,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -149,7 +149,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -170,7 +170,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -191,7 +191,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -212,7 +212,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -233,7 +233,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -254,7 +254,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -275,7 +275,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -296,7 +296,7 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
+           
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
@@ -317,7 +317,6 @@ const PropertyFormCom = () => {
       </Grid>
       <Grid sx={{ padding: "2rem" }}>
         <Typography
-          variant="h7"
           style={{
             fontFamily: "Poppins",
             fontWeight: "500",
