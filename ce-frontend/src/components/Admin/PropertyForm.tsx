@@ -1,35 +1,64 @@
-import { Avatar, Typography } from "@material-ui/core";
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import { Avatar, Paper, TextField, Typography } from "@material-ui/core";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import { useTheme } from "@material-ui/core";
 import React from "react";
-
+import { Box } from "@mui/material";
+import PropertyFormCom from "./PropertyFormCom";
 
 const PropertyForm = () => {
   const theme = useTheme();
 
   return (
-
-    
     <>
-    <Avatar style= {{ backgroundColor:theme.palette.secondary.main, width: 56, height: 56, marginLeft: "380px", marginTop: "100px" }}>
-        <HomeOutlinedIcon style= {{ color:theme.palette.primary.main, width: 45, height: 45 }} />
-    </Avatar>
-    <Typography
-          variant="h6"
-          style={{
-            marginRight: 2,
-            fontFamily: "Poppins",
-            fontWeight: "500",
-            color: "inherit",
-            textDecoration: "none",
-            marginLeft: "305px",
-            marginTop: "10px"
+      <Box
+        sx={{
+          display: "flex",
+          gap: "7rem",
+          justifyContent: "center",
+          alignItems: "start",
+          paddingTop: "3rem",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "4rem",
           }}
         >
-          Property Information
-        </Typography>
-    </>
-  )
-}
+          <Avatar
+            style={{
+              backgroundColor: theme.palette.secondary.main,
+              width: 56,
+              height: 56,
+            }}
+          >
+            <HomeOutlinedIcon
+              style={{
+                color: theme.palette.primary.main,
+                width: 45,
+                height: 45,
+              }}
+            />
+          </Avatar>
 
-export default PropertyForm
+          <Typography
+            variant="h6"
+            style={{
+              fontFamily: "Poppins",
+              fontWeight: "500",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            Property Information
+          </Typography>
+        </Box>
+        <PropertyFormCom />
+      </Box>
+    </>
+  );
+};
+
+export default PropertyForm;
