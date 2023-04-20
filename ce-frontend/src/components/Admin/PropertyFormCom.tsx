@@ -91,7 +91,7 @@ const PropertyFormCom = () => {
       style={{
         position: "relative",
         width: "650px",
-        height: "970px",
+        height: "1000px",
       }}
     >
       <Grid
@@ -163,7 +163,7 @@ const PropertyFormCom = () => {
             style={{ marginTop: "10px" }}
             id="outlined-select-type"
             select
-                      defaultValue="Select"
+            defaultValue="Select"
           >
             {propertyType.map((option) => (
               <MenuItem key={option.value} value={option.value}>
