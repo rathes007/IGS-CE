@@ -2,6 +2,7 @@ import {
   Avatar,
   Button,
   Checkbox,
+  Divider,
   FormControlLabel,
   FormGroup,
   InputAdornment,
@@ -200,6 +201,7 @@ const ClientFormCom = () => {
             sx={TextFieldStyle}
           />
         </Grid>
+        {/* <Divider variant="middle" /> */}
         <Grid item xs={12}>
           <Typography
             style={{
